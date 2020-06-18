@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+
+		<!-- tao template .nihongo -->
+  <definition name="template.public" template="/WEB-INF/templates/public/template.jsp">
+   <put-attribute name="header" value="/WEB-INF/templates/public/header.jsp" />
+   <put-attribute name="content" value="" />
+   <put-attribute name="sidebar" value="/WEB-INF/templates/public/sidebar.jsp" />
+   <put-attribute name="footer" value="/WEB-INF/templates/public/footer.jsp" />
+  </definition>
+  <definition name="public.public.index" extends="template.public">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/home.jsp" />
+  </definition>
+  <definition name="public.public.buy" extends="template.public">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/buy.jsp" />
+  </definition>
+  <definition name="public.public.cat" extends="template.public">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/cat.jsp" />
+  </definition>
+  <definition name="public.public.detail" extends="template.public">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/detail.jsp" />
+  </definition>
+  <definition name="public.public.infor" extends="template.public">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/infor.jsp" />
+  </definition>
+  <definition name="public.public.bill" extends="template.public">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/bill.jsp" />
+  </definition>
+  <definition name="public.public.detailbill" extends="template.public">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/detailbill.jsp" />
+  </definition>
+  
+  	<!-- tạo template.admin -->
+  <definition name="template.admin" template="/WEB-INF/templates/admin/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/admin/header.jsp" />
+    <put-attribute name="sidebar" value="/WEB-INF/templates/admin/sidebar.jsp" />
+    <put-attribute name="content" value="" />
+    <put-attribute name="footer" value="/WEB-INF/templates/admin/footer.jsp" />
+  </definition>
+  
+  <definition name="admin.admin.index" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/index/index.jsp" />
+  </definition>
+  <definition name="admin.cat.index" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/cat/index.jsp" />
+  </definition>
+  <definition name="admin.cat.add" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/cat/add.jsp" />
+  </definition>
+  <definition name="admin.cat.edit" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/cat/edit.jsp" />
+  </definition>
+  <definition name="admin.user.index" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/user/index.jsp" />
+  </definition>
+  <definition name="admin.user.add" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/user/add.jsp" />
+  </definition>
+  <definition name="admin.user.edit" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/user/edit.jsp" />
+  </definition>
+  <definition name="admin.book.index" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/book/index.jsp" />
+  </definition>
+  <definition name="admin.book.add" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/book/add.jsp" />
+  </definition>
+  <definition name="admin.book.edit" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/book/edit.jsp" />
+  </definition>
+  <definition name="admin.book.search" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/book/search.jsp" />
+  </definition>
+  <definition name="admin.role.index" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/role/index.jsp" />
+  </definition>
+  <definition name="admin.role.add" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/role/add.jsp" />
+  </definition>
+  <definition name="admin.role.edit" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/role/edit.jsp" />
+  </definition>
+   <definition name="admin.bill.index" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/bill/index.jsp" />
+  </definition>
+  <definition name="admin.details.index" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/details/index.jsp" />
+  </definition>
+
+
+
+  <!-- auth -->
+  	<!-- tạo template.admin -->
+  <definition name="template.auth" template="/WEB-INF/templates/admin/auth.jsp">
+    <put-attribute name="content" value="" />
+  </definition>
+  <definition name="auth.login" extends="template.auth">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/auth/login.jsp" />
+  </definition>
+  <definition name="auth.403" extends="template.admin">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/auth/403.jsp" />
+  </definition>
+  
+</tiles-definitions>

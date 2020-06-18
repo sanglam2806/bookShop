@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/controller/AdminBillController.java=UTF-8
+encoding//src/controller/AdminBookController.java=UTF-8
+encoding//src/controller/AdminCatController.java=UTF-8
+encoding//src/controller/AdminRoleController.java=UTF-8
+encoding//src/controller/AdminUserController.java=UTF-8
+encoding//src/controller/AuthController.java=UTF-8
+encoding//src/controller/PublicController.java=UTF-8
+encoding//src/dao/CatDAO.java=UTF-8
+encoding//src/dao/UserDAO.java=UTF-8
+encoding//src/entites/Book.java=UTF-8
+encoding//src/entites/Category.java=UTF-8
+encoding//src/entites/Customer.java=UTF-8
+encoding//src/entites/News.java=UTF-8
+encoding//src/entites/RollUser.java=UTF-8
+encoding//src/entites/User.java=UTF-8
